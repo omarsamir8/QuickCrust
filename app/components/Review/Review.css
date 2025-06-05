@@ -1,0 +1,40 @@
+.review{
+    padding: 20px;    
+}
+.review h2{
+    text-align: center;
+    font-size: 26px;
+    color: black;
+    font-family:'Times New Roman', Times, serif;}
+.reviewcontent{
+    padding: 20px;
+    margin-top: 20px;
+    transition: .3s;
+}
+.reviewcontent:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.c-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.c-info h5{
+font-size: 18px;
+color: black;
+}
+.c-info p{
+    color: rgb(54, 53, 53);
+    font-size: 14px;
+}
+.cimg{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cimg img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}

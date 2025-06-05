@@ -1,0 +1,54 @@
+.loginpage {
+  height: 50vh;
+  text-align: center;
+}
+.loginpage h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    font-size: 30px;
+    width: 170px;
+    margin: 20px auto;
+    transition: .3s;
+}
+.loginpage h2:hover{
+    transform: scale(1.1);
+}
+.loginpage h2::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: black;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+}
+.loginpage form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 20px;
+
+}
+.loginpage form input,button{
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    height: 35px;
+    color: black;
+    background-color: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.loginpage .submitbutton{
+    background: linear-gradient(to right, orange,red,orange,green);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.loginpage p span{
+    color: black !important;
+    font-weight: bold;
+}

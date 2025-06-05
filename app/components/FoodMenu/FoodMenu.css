@@ -1,0 +1,167 @@
+.foodmenu{
+    color: black;
+    padding: 20px;
+}
+.foodmenu .res{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foodmenu .res p{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.foodmenu .res select{
+    width: 200px;
+    padding: 10px;
+    background-color: transparent;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    
+}
+.foodmenu .res select option{
+    font-weight: bold;
+    font-size: 20px !important;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menuitems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.menuitems img{
+    width: 200px !important;
+    height: 200px !important;
+    mix-blend-mode: multiply;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+.menuitems img:hover{
+    transform: scale(1.1);
+}
+.menuitems  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+    padding: 5px;
+}
+.menuitems  div p{
+    color: red;
+    font-weight: bold;
+}
+.menuitems h3{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.menuitems  div button{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(245, 89, 32);
+    transition: .3s;
+    margin-top: -5px;
+}
+.menuitems  div button:hover{
+    background-color:rgb(248, 79, 18) ;
+    width: 85%;
+}
+.pag ul{
+background-color: transparent !important;
+width: 250px;
+margin:30px auto 0px auto;
+}
+
+.pag ul li a{
+    background-color: transparent !important;
+    border: 1px solid rgb(245, 89, 32);
+    border-radius: 5px;
+}
+.modelbooody{
+    background: linear-gradient(to top left, #f8f8f8, #fc8954, #c2d3c5) !important;
+}
+.modelboody{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 1;
+}
+.modelboody .imgcont{
+    width: 50% !important;
+    height: 400px !important;   
+    padding-left: 50px;
+}
+.modelboody .imgcont img{
+    width:85%;
+    height: 100%;
+    border-radius: 10px;
+    border-radius:50%;
+    margin: auto !important;
+    text-align: center;
+    
+}
+.singleProDetails {
+    width: 50%;
+}
+.singleProDetails h2{
+font-family: 'Times New Roman', Times, serif;
+margin-bottom: 15px;
+font-weight: bold;
+}
+.singleProDetails P{
+font-family: 'Times New Roman', Times, serif;
+padding-right: 10%;
+}
+.singleProDetails h3{
+    font-size: 20px;
+    color: red;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.buttonsSize{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.singleProDetails .bttn{
+background-color: #fc8954;
+border: none;
+outline: none;
+padding: 10px 20px;
+border-radius: 5px;
+}
+.singleProDetails .bttn:hover{
+    background-color: #f75206;
+}
+.singleProDetails input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #fc8954;
+    width: 53%;
+    border-radius: 5px;
+}
+.extra{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+.extra input{
+    font-size: 20px;
+}
+.extra h3{
+    font-size: 15px;
+}

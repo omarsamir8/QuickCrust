@@ -1,0 +1,20 @@
+.services{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.service{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.service:hover{
+    transform: scale(1.1);
+}
+.service p{
+    font-weight: bold;
+}

@@ -1,0 +1,44 @@
+.Footer{
+    background-color: black;
+    padding: 30px;
+}
+.Footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.Footer ul li{
+cursor: pointer;
+color:teal;
+}
+.Footer h2{
+    font-size: 55px;
+    text-align: center;
+    margin-top: 5px;
+    font-family: cursive;
+}
+.address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+.address p{
+    position: relative;
+}
+.address p::after{
+    content: "";
+    position: absolute;
+    background-color: orangered;
+    width: 2px;
+    height: 100%;
+    right: -10px;
+    bottom: 0;
+}
+.Footer h5{
+text-align: center;
+margin-top:15px;
+}

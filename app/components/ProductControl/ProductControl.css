@@ -1,0 +1,27 @@
+.productcontrol{
+    padding: 20px;
+}
+.productcontrol .protop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.productcontrol .protop p{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.productcontrol .protop button{
+    background-color: rgb(241, 106, 9);
+    border: none;
+    outline: none;
+}
+.productcontrol form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.productcontrol form input{
+    width: 49%;
+}

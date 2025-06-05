@@ -1,0 +1,52 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px !important;
+}
+.navbar h2{
+    font-size: 25px;
+    font-weight: bold;
+    background: linear-gradient(to right, orange,red,orange,green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .3s;
+}
+.navbar h2:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.navbar ul li{
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar ul li::after {
+    content: "";
+    position: absolute;
+    background-color:orangered;
+    width: 0%;  /* العرض الأساسي */
+    height: 3px;
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s ease-in-out;
+}
+.navbar ul li:hover{
+    transform: scale(1.1);
+}
+/* عندما يتم تمرير الماوس على li، يتغير عرض الـ ::after */
+.navbar ul li:hover::after {
+    width: 100%;
+}

@@ -1,0 +1,15 @@
+.adminbar{
+    font-size: 22px;
+    font-weight: bold;
+}
+.adminbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.adminbar ul li{
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+.ordertitle{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 20px;
+}
+.ordertitle h2{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.ordertitle input{
+    width: 25%;
+}

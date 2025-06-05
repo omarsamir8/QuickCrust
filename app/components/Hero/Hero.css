@@ -1,0 +1,45 @@
+.Hero-Right img {
+    mix-blend-mode: multiply;
+}
+.Hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: black;
+}
+.Hero-left{
+    width: 50%;
+    /* margin-top: 60px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.Hero-left h2{
+font-size: 35px;
+width: 50%;
+font-family:Arial, Helvetica, sans-serif;
+font-family:'Times New Roman', Times, serif;
+}
+.Hero-left p{
+    margin-top: 30px;
+    font-size: 20px;
+    width: 60%;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.Hero-left button{
+    padding: 15px 10px;
+    margin-top: 30px;
+    background-color:rgb(252, 118, 69);
+    border: none;
+    outline: none;
+    width: 20%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Hero-left button:hover{
+    background-color: rgb(252, 85, 24);
+    transition: .3s;
+}
