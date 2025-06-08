@@ -1,4 +1,6 @@
-import CartContainer from '../components/CartContainer/CartContainer';
+'use client';
+import CartContainer from "../components/CartContainer/CartContainer";
+
 
 export const metadata = {
   title: "User Cart",
