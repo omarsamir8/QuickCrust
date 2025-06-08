@@ -1,7 +1,7 @@
 "use client";
 
 import { useAuth } from "@/context/AuthContext";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 // مؤقتًا علّق هذا السطر لتجربة build فقط
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import './order.css'
