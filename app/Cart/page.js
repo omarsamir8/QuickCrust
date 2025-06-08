@@ -5,7 +5,7 @@ export const metadata = {
     description: "Cart items and Option To Make order",
   };
 
-export default function Loginpage(){
+export default function Cart(){
     return(
         <>
         <div className="cartpage">
