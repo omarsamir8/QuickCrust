@@ -1,8 +1,8 @@
 'use client';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
