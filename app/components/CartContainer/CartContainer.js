@@ -6,7 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import { useAuth } from '@/context/AuthContext';
+// import { useAuth } from '@/context/AuthContext';
+import { useAuth } from '../../../context/AuthContext';
 
 function CartContainer() {
   const { user } = useAuth();
