@@ -20,7 +20,7 @@ function UserControl(){
     // Create User
     const CreateUser = async () => {
         try {
-          const response = await axios.post("http://localhost:3000/api/users", {
+          const response = await axios.post("https://quick-crust.vercel.app/api/users", {
             name,
             email,
             phone,
@@ -41,7 +41,7 @@ function UserControl(){
     // get all users
     const GetUsers = async () => {
         try {
-            const response = await axios.get("http://localhost:3000/api/users"); 
+            const response = await axios.get("https://quick-crust.vercel.app/api/users"); 
             setallUsers(response.data); // تخزين البيانات في حالة الاستخدام
             toast.success("🎉 Users Data Retrieved!", { position: "top-center" });
         } catch (err) {
@@ -65,7 +65,7 @@ const DeleteUser = async (id) => {
     if (!window.confirm("Are you sure you want to delete this product?")) return;
 
     try {
-        await axios.delete(`http://localhost:3000/api/users/${id}`);
+        await axios.delete(`https://quick-crust.vercel.app/api/users/${id}`);
         setallUsers(allUsers.filter(user => user._id !== id));
         toast.success("🗑️ User Deleted Successfully!", { position: "top-center" });
         // ✅ تحديث حالة المنتجات بعد الحذف
@@ -87,7 +87,7 @@ const DeleteUser = async (id) => {
     // update user
     const UpdateUser = async () => {
         try {
-            await axios.put(`http://localhost:3000/api/users/${selectedUserId}`, {
+            await axios.put(`https://quick-crust.vercel.app/api/users/${selectedUserId}`, {
                 name,
                 email,
                 phone,

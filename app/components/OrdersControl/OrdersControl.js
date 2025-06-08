@@ -15,7 +15,7 @@ function OrderControl() {
     // جلب جميع الطلبات
     const GetOrders = async () => {
         try {
-            const response = await axios.get("http://localhost:3000/api/orders"); 
+            const response = await axios.get("https://quick-crust.vercel.app/api/orders"); 
             setorders(response.data);
             toast.success("🎉 Orders Data Retrieved!", { position: "top-center" });
         } catch (err) {
@@ -32,7 +32,7 @@ function OrderControl() {
     const DeleteOrder = async (id) => {
         if (!window.confirm("Are you sure you want to delete this Order?")) return;
         try {
-            await axios.delete(`http://localhost:3000/api/orders/${id}`);
+            await axios.delete(`https://quick-crust.vercel.app/api/orders/${id}`);
             toast.success("🗑️ Order Deleted Successfully!", { position: "top-center" });
             setorders(orders.filter(order => order._id !== id));
         } catch (err) {
@@ -45,7 +45,7 @@ function OrderControl() {
     const UpdateOrder = async () => {
         try {
             const response = await axios.put(
-                `http://localhost:3000/api/orders/${selectedid}`,
+                `https://quick-crust.vercel.app/api/orders/${selectedid}`,
                 { status }
             );
             toast.success("✅ Order Status Updated Successfully!", { position: "top-center" });

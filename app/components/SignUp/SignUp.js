@@ -16,7 +16,7 @@ export default function SignUp() {
         e.preventDefault(); // Prevents page refresh
 
         try {
-            const response = await axios.post("http://localhost:3000/api/users", {
+            const response = await axios.post("https://quick-crust.vercel.app/api/users", {
                 email,
                 password,
                 name,

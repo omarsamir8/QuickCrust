@@ -34,7 +34,7 @@ function ProductControl(){
                 formData.append("img", img);
             }
 
-            const response = await axios.post("http://localhost:3000/api/products", formData, {
+            const response = await axios.post("https://quick-crust.vercel.app/api/products", formData, {
                 headers: { "Content-Type": "multipart/form-data" }
             });
 
@@ -48,7 +48,7 @@ function ProductControl(){
     // جلب جميع المنتجات
     const GetProducts = async () => {
         try {
-            const response = await axios.get("http://localhost:3000/api/products"); 
+            const response = await axios.get("https://quick-crust.vercel.app/api/products"); 
             setAllProducts(response.data); // تخزين البيانات في حالة الاستخدام
             toast.success("🎉 Products Data Retrieved!", { position: "top-center" });
             console.log(response.data)
@@ -72,7 +72,7 @@ const DeleteProduct = async (id) => {
     if (!window.confirm("Are you sure you want to delete this product?")) return;
 
     try {
-        await axios.delete(`http://localhost:3000/api/products/${id}`);
+        await axios.delete(`https://quick-crust.vercel.app/api/products/${id}`);
         toast.success("🗑️ Product Deleted Successfully!", { position: "top-center" });
 
         // ✅ تحديث حالة المنتجات بعد الحذف
@@ -101,7 +101,7 @@ const UpdateProduct = async () => {
         }
 
         const response = await axios.put(
-            `http://localhost:3000/api/products/${selectedProduct._id}`, 
+            `https://quick-crust.vercel.app/api/products/${selectedProduct._id}`, 
             formData,
             { headers: { "Content-Type": "multipart/form-data" } }
         );

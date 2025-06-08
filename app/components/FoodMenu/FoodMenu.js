@@ -23,7 +23,7 @@ function FoodMenu(){
     // جلب جميع المنتجات
     const GetProducts = async () => {
         try {
-            const response = await axios.get("http://localhost:3000/api/products"); 
+            const response = await axios.get("https://quick-crust.vercel.app/api/products"); 
             setAllProducts(response.data);
             toast.success("🎉 Products Data Retrieved!", { position: "top-center" });
         } catch (err) {
@@ -53,7 +53,7 @@ function FoodMenu(){
 
     const GetSingleProducts = async (id) => {
         try {
-            const response = await axios.get(`http://localhost:3000/api/products/${id}`); 
+            const response = await axios.get(`https://quick-crust.vercel.app/api/products/${id}`); 
             setSingleProduct(response.data);
             toast.success("🎉 Product Data Retrieved!", { position: "top-center" });
         } catch (err) {
@@ -64,7 +64,7 @@ function FoodMenu(){
 
     const AddToCart = async (productId) => {
         try {
-            await axios.post(`http://localhost:3000/api/cart`, { quantity, productId, action, userId: user._id });
+            await axios.post(`https://quick-crust.vercel.app/api/cart`, { quantity, productId, action, userId: user._id });
             toast.success("🎉 Product Added To Cart Successfully!", { position: "top-center" });
         } catch (err) {
             toast.error("❌ Product To Cart Failed!", { position: "top-center" });

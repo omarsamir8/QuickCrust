@@ -17,7 +17,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://quick-crust-h1zymyz3c-omar-samirs-projects-0dfe587a.vercel.app/api/login", {
+      const response = await axios.post("https://quick-crust.vercel.app/api/login", {
         email,
         password,
       });

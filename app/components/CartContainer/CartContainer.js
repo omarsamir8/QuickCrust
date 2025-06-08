@@ -23,7 +23,7 @@ function CartContainer() {
   const GetCartProducts = async () => {
     if (!user?._id) return;
     try {
-      const response = await axios.get(`http://localhost:3000/api/cart?userId=${user._id}`);
+      const response = await axios.get(`https://quick-crust.vercel.app/api/cart?userId=${user._id}`);
       console.log(response.data);
       setCartItems(response.data.cart);
 
@@ -45,7 +45,7 @@ function CartContainer() {
     if (!user?._id) return;
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:3000/api/cart', {
+      const response = await axios.post('https://quick-crust.vercel.app/api/cart', {
         action: 'remove',
         userId: user._id,
         productId,
@@ -68,7 +68,7 @@ function CartContainer() {
   // تحديث الكمية
   const handleQuantityChange = async (productId, newQuantity) => {
     try {
-      const response = await axios.post('http://localhost:3000/api/cart', {
+      const response = await axios.post('https://quick-crust.vercel.app/api/cart', {
         action: "update",
         userId: user._id,
         productId,
@@ -86,7 +86,7 @@ function CartContainer() {
   // تنفيذ الطلب
   const makeOrder = async () => {
     try {
-      const response = await axios.post("http://localhost:3000/api/orders", {
+      const response = await axios.post("https://quick-crust.vercel.app/api/orders", {
         userId: user._id,
         customer,
         address,
