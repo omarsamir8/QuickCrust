@@ -1,8 +1,8 @@
 "use client";
 import './FoodMenu.css';
 import Image from 'next/image';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from "react-toastify";
